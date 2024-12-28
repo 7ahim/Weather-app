@@ -16,7 +16,7 @@
             <button><img src="search.png" alt=""></button>
         </div>
         <div class="weather">
-            <img src="snow.png" alt="" class="weather-icon">
+            <img src="clouds.png" alt="" class="weather-icon">
             <h1 class="temp">22°C</h1>
             <h2 class="city">Chennai</h2>
             <div class="details">
@@ -37,5 +37,12 @@
             </div>
         </div>
     </div>
+    <script>
+        const apiKey="7cacd3cd857d1c5fa3b2f866b74870bb";
+        const apiUrl="https://api.openweathermap.org/data/2.5/weather?units=metric&q=chennai";
+        async function CheckWeather(){
+            const response= await fetch(apiUrl+ `&appid=${apiKey}`)
+        }
+    </script>
 </body>
 </html>
