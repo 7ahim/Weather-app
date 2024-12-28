@@ -1,0 +1,41 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Poppins','sans-serif';
+    box-sizing: border-box;
+}
+body{
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+.weatherbox{
+    
+    background-color: cyan;
+    height:500px;
+    width:400px;
+    border-radius: 10px;
+    
+}
+.searchpanel{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+}
+.searchbox{
+    height: 1.5rem;
+    width: 10rem;
+    border-radius: 5px;
+}
+.searchicon{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 40%;
+    background-color: antiquewhite;
+    background-image: url("search.png");
+    background-size: cover;
+}
