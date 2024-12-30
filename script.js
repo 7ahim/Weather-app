@@ -41,9 +41,17 @@ async function CheckWeather(cityyy) {
             weathericon = document.querySelector(".weather-icon");
             weathericon.src = "snow.png";
         }
-        
+
     }
 }
+document.querySelector(".inputbox").addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        let cityy = document.querySelector(".inputbox").value;
+        if (cityy) {
+            CheckWeather(cityy);
+        }
+    }
+});
 searchbtn.addEventListener("click", () => {
     let cityy = document.querySelector(".inputbox").value;
     if (cityy) {
